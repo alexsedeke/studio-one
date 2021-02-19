@@ -1,6 +1,6 @@
 {
   "name": "studio-one",
-  "version": "2.0.0-alpha.0",
+  "version": "1.0.0-alpha.0",
   "description": "Studio One Vue 3 UI Components",
   "main": "index.js",
   "scripts": {
