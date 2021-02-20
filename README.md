@@ -1,5 +1,7 @@
 # studio-one
-WIP: Test publishing own components
+
+Studio One is a UI Component Library for Vue 3.
+The actual state is under development and actually unstable.
 
 ## Components
 
