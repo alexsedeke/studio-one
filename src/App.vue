@@ -1,5 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <one-button>thanks</one-button>
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 </template>
 
