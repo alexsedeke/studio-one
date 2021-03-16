@@ -1,13 +1,17 @@
 public/
 docs/
 tests/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+src/
+*.log*
 .travis.yml
+.eslintignore
 *.map
 dist/demo.html
 dist/favicon.ico
+vite.config.ts
+tslint.json
+postcss.config.json
+
 
 .idea
 .vscode

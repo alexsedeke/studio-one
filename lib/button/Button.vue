@@ -1,10 +1,10 @@
 <template>
-  <div
+  <button
     :class="cssClass"
     :tabindex="tabindex"
     @click.stop="onClick">
     <slot></slot>
-  </div>
+  </button>
 </template>
 
 <script lang="ts">
@@ -44,7 +44,6 @@ export default defineComponent({
       }
       return cssClassList.join(' ')
     })
-
     return {
       variant,
       disabled,

@@ -2,6 +2,4 @@
 @import '_normalize.css';
 @import '_main.css';
 @import '_variables.css';
-@import '_flex-helper.postcss.css';
-
-@import '../components/button/one-button.postcss';
+@import '_flex-helper.postcss';

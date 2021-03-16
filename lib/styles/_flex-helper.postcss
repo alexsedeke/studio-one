@@ -1,0 +1,26 @@
+.flex {
+  &--column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  &--row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  &--flex {
+    flex: 1 1 auto;
+    align-self: stretch;
+  }
+  &--static {
+    flex: 0 1 auto;
+    align-self: stretch;
+  }
+}
