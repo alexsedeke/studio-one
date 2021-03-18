@@ -27,10 +27,14 @@ export const resizeHandler = (target: HTMLElement, resizerType: ResizerKeyType) 
   const Resize = (event: MouseEvent) => {
     switch (resizerType) {
       case 'e':
-      case 'w':
         target.style.width = (event.clientX - target.offsetLeft) + 'px'
         break;
+      case 'w':
+        target.style.width = (target.offsetLeft - event.clientX + target.offsetWidth) + 'px'
+        break;
       case 'n':
+        target.style.height = (target.offsetTop - event.clientY + target.offsetHeight) + 'px';
+        break;
       case 's':
         target.style.height = (event.clientY - target.offsetTop) + 'px';
         break;
