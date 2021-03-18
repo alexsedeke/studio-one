@@ -1,0 +1,47 @@
+.one-resize {
+  --resizer-size: 7px;
+  --resizer-oversize: -2px;
+  position: absolute;
+  touch-action: none;
+
+  &--n {
+    height: var(--resizer-size);
+    top: var(--resizer-oversize);
+    left: 0;
+    right: 0;
+    cursor: ns-resize;
+    &-parent {
+      padding-top: calc(var(--resizer-size) + var(--resizer-oversize));
+    }
+  }
+  &--s {
+    height: var(--resizer-size);
+    bottom: var(--resizer-oversize);
+    left: 0;
+    right: 0;
+    cursor: ns-resize;
+    &-parent {
+      padding-bottom: calc(var(--resizer-size) + var(--resizer-oversize));
+    }
+  }
+  &--e {
+    width: var(--resizer-size);
+    right: var(--resizer-oversize);
+    top: 0;
+    bottom: 0;
+    cursor: ew-resize;
+    &-parent {
+      padding-right: calc(var(--resizer-size) + var(--resizer-oversize));
+    }
+  }
+  &--w {
+    width: var(--resizer-size);
+    left: var(--resizer-oversize);
+    top: 0;
+    bottom: 0;
+    cursor: ew-resize;
+    &-parent {
+      padding-left: calc(var(--resizer-size) + var(--resizer-oversize));
+    }
+  }
+}

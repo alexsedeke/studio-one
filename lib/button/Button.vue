@@ -25,7 +25,7 @@ export default defineComponent({
       default: false
     },
     tabindex: {
-      type: [Number]
+      type: Number
     }
   },
   setup(props, { emit }) {

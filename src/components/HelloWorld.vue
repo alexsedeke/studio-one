@@ -1,4 +1,5 @@
 <template>
+  <one-bar resizer="e">some text here</one-bar>
   <h1>{{ msg }}</h1>
 
   <p>
@@ -14,7 +15,7 @@
     (if using
     <code>&ltscript setup&gt;</code>)
   </p>
-
+  <one-bar resizer="n">and some content here</one-bar>
   <p>See <code>README.md</code> for more information.</p>
 
   <p>
@@ -31,8 +32,12 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+import OneBar from '../../lib/bar/Bar.vue'
 export default defineComponent({
   name: 'HelloWorld',
+  components: {
+    OneBar
+  },
   props: {
     msg: {
       type: String,

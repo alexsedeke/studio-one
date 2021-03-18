@@ -1,0 +1,26 @@
+.page-grid {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "sidebar header toolbar"
+    "sidebar content toolbar"
+    "sidebar footer toolbar";
+  &__sidebar {
+    grid-area: sidebar;
+  }
+  &__toolbar {
+    grid-area: toolbar;
+  }
+  &__header {
+    grid-area: header;
+  }
+  &__content {
+    grid-area: content;
+  }
+  &__footer {
+    grid-area: footer;
+  }
+}
