@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Bar</h1>
+    <h1>Group</h1>
     <div class="example">
       Examples
     </div>
@@ -9,6 +9,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'BarView'
+  name: 'GroupView'
 })
 </script>

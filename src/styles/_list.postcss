@@ -1,0 +1,24 @@
+.one-list {
+  padding: var(--one-padding);
+  list-style: none;
+  
+  &__item {
+    padding: 4px 8px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    &:hover {
+      border-color: var(--color-cool-grey-200);
+    }
+
+    &--selected {
+      background-color: var(--color-cool-grey-200);
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

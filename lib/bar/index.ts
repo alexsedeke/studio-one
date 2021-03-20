@@ -5,4 +5,4 @@ Bar.install = (Vue: App) => {
   Vue.component(Bar.name, Bar)
 }
 
-export default Bar
+export { Bar }

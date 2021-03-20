@@ -5,4 +5,4 @@ Button.install = (Vue: App) => {
   Vue.component(Button.name, Button)
 }
 
-export default Button
+export { Button }

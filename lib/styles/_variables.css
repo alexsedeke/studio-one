@@ -1,4 +1,5 @@
 :root {
+  --one-default-font-family: 'Roboto', sans-serif;
   /* PRIMARY */
   --one-state-primary-color: rgb(12, 97, 255);
   --one-state-primary-font-color: rgb(255, 255, 255);

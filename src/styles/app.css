@@ -1,6 +1,33 @@
 @import '_colors.css';
+@import '_font.css';
 @import '_normalize.css';
 @import '_main.css';
 @import '_variables.css';
 @import '_flex-helper.postcss';
+@import '_list.postcss';
 @import '_components.postcss';
+
+html {
+  height: 100%;
+  width: 100%;
+  /*
+   * 1rem = 10px      
+   * 10px = 0.625rem  ( 62.5%)
+   * 12px = 0.75rem   (   75%)
+   * 14px = 0.875rem  ( 87.5%)
+   * 16px = 1rem      (  100%)
+   * 18px = 1.125rem  (112.5%)
+   * 20px = 1.25rem   (  125%)
+   * 24px = 1.5rem    (  150%)
+   * 30px = 1.875rem  (187.5%)
+   * 32px = 2rem      (  200%)
+   */
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}

@@ -1,10 +1,12 @@
-import Button from './button'
-import Bar from './bar'
+import { Button } from './button'
+import { Bar } from './bar'
+import { Group } from './group'
+import { List, ListItem } from './list'
 import { App } from 'vue'
 import './styles/index.css'
 
 const components = [
-  Button, Bar
+  Button, Bar, Group, List, ListItem
 ]
 
 export default {
@@ -14,5 +16,8 @@ export default {
     })
   }
 }
-export { default as Button } from './button'
-export { default as Bar } from './bar'
+
+export { Button } from './button'
+export { Bar } from './bar'
+export { Group } from './group'
+export { List, ListItem } from './list'

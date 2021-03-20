@@ -4,6 +4,8 @@ import HelloWorld from '../components/HelloWorld.vue'
 import CompnentOverView from '../components/ComponentOverView.vue'
 import ButtonView from '../components/ButtonView.vue'
 import BarView from '../components/BarView.vue'
+import ListView from '../components/ListView.vue'
+import GroupView from '../components/GroupView.vue'
 
 const routes = [
   {
@@ -15,7 +17,9 @@ const routes = [
     children: [
       { path: '', name: 'components-list', component: CompnentOverView },
       { path: 'button', name: 'components-button', component: ButtonView },
-      { path: 'bar', name: 'components-bar', component: BarView }
+      { path: 'bar', name: 'components-bar', component: BarView },
+      { path: 'list', name: 'components-list', component: ListView },
+      { path: 'group', name: 'components-group', component: GroupView }
     ]
   }, {
     path: '/',
