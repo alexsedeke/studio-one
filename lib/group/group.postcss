@@ -1,18 +1,47 @@
 .one-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
   padding: var(--one-default-padding, 1rem);
   list-style: none;
 
   &__headline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    margin: 0;
     font-family: var(--one-default-font-family);
   }
 
+  &__title {
+    flex: 1 1 auto;
+    font-weight: 500;
+    color: var(--color-cool-grey-300);
+  }
+
+  &__toggle {
+    svg {
+      width: 1em;
+    }
+    --ogc-primary--width-strong: 80;
+    --ogc-primary--stroke: var(--color-cool-grey-300);
+    flex: 0 1 auto;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform .3s;
+    &--collapsed {
+      transform: rotate(-90deg);
+    }
+  }
+
   &__content {
-    display: block;
+    overflow: hidden;
+
+    &--hidden {
+      height: 0;
+    }
   }
 }

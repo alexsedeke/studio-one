@@ -5,7 +5,7 @@
 @import '_variables.css';
 @import '_flex-helper.postcss';
 @import '_list.postcss';
-@import '_components.postcss';
+@import '_componentsView.postcss';
 
 html {
   height: 100%;
