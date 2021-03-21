@@ -1,5 +1,5 @@
 <template>
-  <li class="one-listitem" :class="getClasses">
+  <li class="one-listitem" :class="cssClasses">
     <slot name="pre"></slot>
     <slot></slot>
     <slot name="post"></slot>
@@ -7,7 +7,9 @@
 </template>
 
 <script lang="ts">
-import  { ref, watch, defineComponent, computed } from 'vue'
+import { ref, watch, defineComponent } from 'vue'
+import Classlist from '../features/classlist'
+
 export default defineComponent({
   name: 'one-list-item',
   props: {
@@ -16,37 +18,19 @@ export default defineComponent({
     }
   },
   setup(props) {
-    const cssClasses = ref<String[]>([])
-    /**
-     * Remove class name from list if present.
-     */
-    const removeClass = (className: String) => {
-      const indexOfOccurrence = cssClasses.value.indexOf(className)
-      if (indexOfOccurrence >= 0) {
-        cssClasses.value.splice(indexOfOccurrence, 1)
-      }
-    }
-    /**
-     * Add class name to list if not present.
-     */
-    const addClass = (className: String) => {
-      if (!cssClasses.value.includes(className)) {
-        cssClasses.value.push(className)
-      }
-    }
+    const cssClasses = ref<String>('')
+    const classlist = new Classlist()
+
     watch(() => props.active, (currentValue) => {
       if (currentValue === true) {
-        addClass('one-listitem--active')
+        classlist.addClass('one-listitem--active')
       } else {
-        removeClass('one-listitem--active')
+        classlist.removeClass('one-listitem--active')
       }
+      cssClasses.value = classlist.join(' ')
     })
-
-    const getClasses = computed(() => cssClasses.value.join(' '))
     
-    return {
-      getClasses
-    }
+    return { cssClasses }
   }
 })
 </script>

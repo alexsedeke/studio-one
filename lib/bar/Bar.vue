@@ -1,6 +1,8 @@
 <template>
   <div ref="barElement" class="one-bar" :class="getResizerStyle">
-    <div class="one-bar__content"><slot></slot></div>
+    <div class="one-bar__content">
+      <slot></slot>
+    </div>
   </div>
 </template>
 <script lang="ts">

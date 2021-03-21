@@ -18,7 +18,9 @@
 </template>
 
 <script lang="ts">
-import  { ref, watch, defineComponent } from 'vue'
+import  { ref, watch, PropType, defineComponent } from 'vue'
+import { SizeType } from '../types/index'
+
 export default defineComponent({
   name: 'one-group',
   props: {
@@ -29,6 +31,9 @@ export default defineComponent({
     title: {
       type: String,
       required: true
+    },
+    size: {
+      type: String as PropType<SizeType>,
     }
   },
   setup(props) {

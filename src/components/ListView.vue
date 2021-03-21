@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app__content-view">
     <h1>List</h1>
     <div class="example">
       Examples

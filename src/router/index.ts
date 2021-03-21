@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import ComponentsView from '../components/ComponentsView.vue'
-import HelloWorld from '../components/HelloWorld.vue'
+import HomeView from '../components/HomeView.vue'
 import CompnentOverView from '../components/ComponentOverView.vue'
 import ButtonView from '../components/ButtonView.vue'
 import BarView from '../components/BarView.vue'
@@ -23,9 +23,9 @@ const routes = [
     ]
   }, {
     path: '/',
-    name: 'halo',
+    name: 'home',
     components: {
-      default: HelloWorld
+      default: HomeView
     }
   }
 ]

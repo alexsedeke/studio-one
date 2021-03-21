@@ -20,9 +20,6 @@
   }
 
   &__toggle {
-    svg {
-      width: 1em;
-    }
     --ogc-primary--width-strong: 80;
     --ogc-primary--stroke: var(--color-cool-grey-300);
     flex: 0 1 auto;
@@ -34,6 +31,9 @@
     transition: transform .3s;
     &--collapsed {
       transform: rotate(-90deg);
+    }
+    svg {
+      width: 1em;
     }
   }
 

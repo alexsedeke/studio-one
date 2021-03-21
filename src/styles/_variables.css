@@ -1,5 +1,5 @@
 :root {
-  --one-padding: 10px;
+  --one-padding: 1rem;
   /* PRIMARY */
   --one-state-primary-color: rgb(12, 97, 255);
   --one-state-primary-font-color: rgb(255, 255, 255);

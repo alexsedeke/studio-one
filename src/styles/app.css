@@ -4,6 +4,7 @@
 @import '_main.css';
 @import '_variables.css';
 @import '_flex-helper.postcss';
+@import '_app.postcss';
 @import '_list.postcss';
 @import '_componentsView.postcss';
 
@@ -28,6 +29,10 @@ html {
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow', 'Roboto', sans-serif;
   font-size: 1.6rem;
+}
+
+#app {
+  min-height: 100%;
 }

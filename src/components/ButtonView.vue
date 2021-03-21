@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app__content-view">
     <h1>Button</h1>
     <div class="example">
       <one-button variant="primary">Primary</one-button>

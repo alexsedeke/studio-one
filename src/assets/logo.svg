@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" id="masks">
+  <mask id="mask-1">
+    <polygon id="m1" points="0 0, 57 0, 57 0, 0 0" fill="white" />
+    <polygon id="m2" points="0 60, 0 60, 0 120, 0 120" fill="white" />
+  </mask>
+  <mask id="mask-2">
+    <polygon id="m3" points="0 0, 57 0, 57 0, 0 0" fill="white" />
+    <polygon id="m4" points="0 0, 57 0, 57 0, 0 0" fill="white" />
+  </mask>
+  <mask id="mask-3">
+    <polygon id="m5" points="0 0, 57 0, 57 0, 0 0" fill="white" />
+    <polygon id="m6" points="0 0, 57 0, 57 0, 0 0" fill="white" />
+  </mask>
+</svg>
