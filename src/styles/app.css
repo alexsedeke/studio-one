@@ -32,7 +32,3 @@ body {
   font-family: 'Barlow', 'Roboto', sans-serif;
   font-size: 1.6rem;
 }
-
-#app {
-  min-height: 100%;
-}

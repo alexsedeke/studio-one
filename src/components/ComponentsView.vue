@@ -2,7 +2,7 @@
   <div class="page-grid">
     <div class="page-grid__sidebar">
       <one-bar resizer="e" class="components-view__menu">
-        <app-logo />
+        <app-logo class="components-view__logo" />
         <!-- component group -->
         <one-group title="Components">
           <one-list>

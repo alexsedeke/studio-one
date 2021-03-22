@@ -20,6 +20,6 @@ export default defineComponent({
 
 <style lang="postcss">
 .logo--custom {
-  font-size: 2rem;
+  font-size: 8rem;
 }
 </style>
