@@ -1,4 +1,6 @@
 .DS_Store
+dist-app
+dist-lib
 dist-ssr
 *.local
 

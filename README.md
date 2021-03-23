@@ -2,7 +2,7 @@
 
 Studio One is a UI Component Library for Vue 3.
 The actual state is under development and actually unstable.
-[Studio One](alexandervu.github.io/studio-one)
+[Studio One](https://alexandervu.github.io/studio-one)
 
 ## Components
 
