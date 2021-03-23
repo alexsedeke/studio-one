@@ -9,7 +9,6 @@ import GroupView from '../components/GroupView.vue'
 
 const routes = [
   {
-    base: '/studio-one/',
     path: '/components',
     name: 'components',
     components: {
@@ -32,7 +31,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/studio-one/'),
   routes
 })
 
