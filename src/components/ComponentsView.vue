@@ -23,7 +23,7 @@
       </one-bar>
     </div>
     <div class="page-grid__header">
-      <one-bar class="components-view__navigation">Header</one-bar>
+      <one-bar resizer="s" class="components-view__navigation">Header</one-bar>
     </div>
     <div class="page-grid__content">
       <router-view></router-view>
