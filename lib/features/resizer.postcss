@@ -4,6 +4,17 @@
   position: absolute;
   touch-action: none;
 
+  &__global {
+    &--n, &--s {
+      user-select: none;
+      cursor: row-resize !important;
+    }
+    &--e, &--w {
+      user-select: none;
+      cursor: col-resize !important;
+    }
+  }
+
   &--n {
     height: var(--resizer-size);
     top: var(--resizer-oversize);

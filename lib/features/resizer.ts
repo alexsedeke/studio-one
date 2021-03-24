@@ -9,12 +9,15 @@ import { ResizerKeyType } from '../types'
 export const resizeHandler = (target: HTMLElement, resizerType: ResizerKeyType) => {
   const initResize = (event: MouseEvent) => {
     if (event.button === 0) {
+      window.getSelection()?.removeAllRanges()
+      document.body.classList.add(`one-resize__global--${resizerType}`)
       window.addEventListener('mousemove', Resize, false)
       window.addEventListener('mouseup', stopResize, false)
     }
   }
   
   const stopResize = () => {
+    document.body.classList.remove(`one-resize__global--${resizerType}`)
     window.removeEventListener('mousemove', Resize, false)
     window.removeEventListener('mouseup', stopResize, false)
   }
