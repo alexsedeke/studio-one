@@ -1,0 +1,50 @@
+.doc {
+  &__view {
+    margin: 0 auto;
+    padding: var(--one-padding) calc(var(--one-padding)*3);
+    max-width: 1280px;
+
+    hr {
+      margin: 2em 0;
+      height: 1px;
+      background-color: var(--color-cool-grey-200);
+      border: none;
+    }
+  }
+  &__headline {
+    margin-bottom: .3em;
+    font-weight: 700;
+    color: var(--color-cool-grey-400);
+    border-bottom: 0px solid transparent;
+  }
+
+  &__introduction {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: var(--color-cool-grey-400);
+    strong {
+      color: var(--color-cool-grey-600);
+    }
+  }
+
+  &__intro {
+    .doc__headline {
+      color: var(--color-corporate-orange);
+      border-color: var(--color-corporate-light-orange);
+    }
+  }
+
+  &__presentation {
+    .doc__headline {
+      color: var(--color-corporate-green);
+      border-color: var(--color-corporate-light-green);
+    }
+  }
+
+  &__api {
+    .doc__headline {
+      color: var(--color-corporate-violet);
+      border-color: var(--color-corporate-light-violet);
+    }
+  }
+}

@@ -7,6 +7,7 @@
 @import '_app.postcss';
 @import '_list.postcss';
 @import '_componentsView.postcss';
+@import '_doc.postcss';
 
 html {
   height: 100%;
@@ -34,11 +35,11 @@ body {
 }
 
 ::selection {
-  background: hsl(32,78.8%,52%);
-  color: hsl(32,78.8%,90%);
+  background: hsl(32,78.8%,92%);
+  color: hsl(32,78.8%,40%);
 }
 
 a {
-  text-decoration: none;
-  color: rgb(162, 190, 48);
+  text-decoration-color: hsl(var(--hsl-corporate-violet-h), var(--hsl-corporate-violet-s), 85%);
+  color: var(--color-corporate-light-violet);
 }
