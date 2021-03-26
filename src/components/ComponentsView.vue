@@ -15,15 +15,15 @@
             <one-list-item :active="isActive('components-group')">
               <router-link :to="{ name: 'components-group' }">Group</router-link>
             </one-list-item>
+            <one-list-item :active="isActive('components-nav')">
+              <router-link :to="{ name: 'components-nav' }">Nav</router-link>
+            </one-list-item>
             <one-list-item :active="isActive('components-list')">
               <router-link :to="{ name: 'components-list' }">List</router-link>
             </one-list-item>
           </one-list>
         </one-group>
       </one-bar>
-    </div>
-    <div class="page-grid__header">
-      <one-bar resizer="s" class="components-view__navigation">Header</one-bar>
     </div>
     <div class="page-grid__content">
       <router-view></router-view>
