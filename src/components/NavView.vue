@@ -11,18 +11,29 @@
       <h3>Simple test</h3>
       <p>Description for simple test</p>
       <div class="doc__example">
-        <one-nav>
-          <one-nav-item>Test 1</one-nav-item>
-          <one-nav-item>Test 2</one-nav-item>
-          <one-nav-item>Test 3</one-nav-item>
+        <one-nav class="one-nav--center">
+          <one-navitem @onClick="activateItem('test1')" :active="isActive('test1')">Test 1</one-navitem>
+          <one-navitem @onClick="activateItem('test2')" :active="isActive('test2')">Test 2</one-navitem>
+          <one-navitem @onClick="activateItem('test3')" :active="isActive('test3')">Test 3</one-navitem>
         </one-nav>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { ref, defineComponent } from 'vue'
 export default defineComponent({
-  name: 'NavView'
+  name: 'NavView',
+  setup() {
+    const activeItem = ref<String>('test1')
+    const activateItem = (item: String) => {
+      activeItem.value = item
+    }
+    const isActive = (item: String) => (item === activeItem.value)
+
+    return {
+      activateItem, isActive
+    }
+  }
 })
 </script>

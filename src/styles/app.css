@@ -30,7 +30,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Barlow', 'Roboto', sans-serif;
+  font-family: var(--one-font-body);
   font-size: 1.6rem;
 }
 

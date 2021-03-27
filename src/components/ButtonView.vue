@@ -18,8 +18,8 @@
       <div class="test-nav">
         <one-nav>
           <one-nav-item>test 1</one-nav-item>
-          <one-nav-item>test 2</one-nav-item>
-          <one-nav-item>test 3</one-nav-item>
+          <one-nav-item :bisabled="buttonDisabled">test 2</one-nav-item>
+          <one-nav-item test="bla">test 3</one-nav-item>
         </one-nav>
       </div>
 
@@ -57,7 +57,14 @@ Stripe::Charge.create(
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'ButtonView'
+  name: 'ButtonView',
+  setup() {
+    const buttonDisabled = true
+
+    return {
+      buttonDisabled
+    }
+  }
 })
 </script>
 
