@@ -1,0 +1,55 @@
+:root {
+  /* state color */
+  --hsl-state-primary-h: 211;
+  --hsl-state-primary-s: 100%;
+  --hsl-state-primary-l: 50%;
+  --color-state-primary: hsl(var(--hsl-state-primary-h), var(--hsl-state-primary-s), var(--hsl-state-primary-l));
+  --hsl-state-secondary-h: 208;
+  --hsl-state-secondary-s: 7%;
+  --hsl-state-secondary-l: 46%;
+  --color-state-secondary: hsl(var(--hsl-state-secondary-h), var(--hsl-state-secondary-s), var(--hsl-state-secondary-l));
+  --hsl-state-success-h: 134;
+  --hsl-state-success-s: 61%;
+  --hsl-state-success-l: 41%;
+  --color-state-success: hsl(var(--hsl-state-success-h), var(--hsl-state-success-s), var(--hsl-state-success-l));
+  --hsl-state-warning-h: 45;
+  --hsl-state-warning-s: 100%;
+  --hsl-state-warning-l: 51%;
+  --color-state-warning: hsl(var(--hsl-state-warning-h), var(--hsl-state-warning-s), var(--hsl-state-warning-l));
+  --hsl-state-danger-h: 354;
+  --hsl-state-danger-s: 70%;
+  --hsl-state-danger-l: 54%;
+  --color-state-danger: hsl(var(--hsl-state-danger-h), var(--hsl-state-danger-s), var(--hsl-state-danger-l));
+  --hsl-state-info-h: 188;
+  --hsl-state-info-s: 78%;
+  --hsl-state-info-l: 41%;
+  --color-state-info: hsl(var(--hsl-state-info-h), var(--hsl-state-info-s), var(--hsl-state-info-l));
+  --hsl-state-disabled-h: 210;
+  --hsl-state-disabled-s: 10%;
+  --hsl-state-disabled-l: 23%;
+  --color-state-disabled: hsl(var(--hsl-state-disabled-h), var(--hsl-state-disabled-s), var(--hsl-state-disabled-l));
+  /* STATE -> PRIMARY */
+  --one-state-primary-color: var(--color-state-primary);
+  --one-state-primary-font-color: var(--color-white);
+  --one-state-primary-outline-color: hsl(var(--hsl-state-primary-h), var(--hsl-state-primary-s), 80%);
+  /* STATE -> SECONDARY */
+  --one-state-secondary-color: var(--color-state-secondary);
+  --one-state-secondary-font-color: var(--color-white);
+  --one-state-secondary-outline-color: hsl(var(--hsl-state-secondary-h), var(--hsl-state-secondary-s), 80%);
+  /* STATE -> SUCCESS */
+  --one-state-success-color: var(--color-state-success);
+  --one-state-success-font-color: var(--color-white);
+  --one-state-success-outline-color: hsl(var(--hsl-state-success-h), var(--hsl-state-success-s), 80%);
+  /* STATE -> DANGER */
+  --one-state-danger-color: var(--color-state-danger);
+  --one-state-danger-font-color: var(--color-white);
+  --one-state-danger-outline-color: hsl(var(--hsl-state-danger-h), var(--hsl-state-danger-s), 80%);
+  /* STATE -> WARNING */
+  --one-state-warning-color: var(--color-state-warning);
+  --one-state-warning-font-color: var(--color-black);
+  --one-state-warning-outline-color: hsl(var(--hsl-state-warning-h), var(--hsl-state-warning-s), 80%);
+  /* STATE -> INFO */
+  --one-state-info-color: var(--color-state-info);
+  --one-state-info-font-color: var(--color-white);
+  --one-state-info-outline-color: hsl(var(--hsl-state-info-h), var(--hsl-state-info-s), 80%);
+}

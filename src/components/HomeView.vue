@@ -2,7 +2,8 @@
   <div class="app__view app__view--center">
     <div>
       <app-logo class="logo--custom"></app-logo>
-      <router-link :to="{ name: 'components' }">Components</router-link>
+      <router-link :to="{ name: 'system' }">System</router-link>
+      <router-link :to="{ name: 'brand' }">Brand</router-link>
     </div>
   </div>
 </template>

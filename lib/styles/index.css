@@ -1,6 +1,9 @@
-@import '_colors.css';
+@import '_colors-basic.css';
+@import '_colors-corporate.css';
+@import '_colors-state.css';
 @import '_variables.css';
 @import '_page-layouts.postcss';
+@import '_table.postcss';
 @import '../features/resizer.postcss';
 @import '../bar/bar.postcss';
 @import '../button/button.postcss';

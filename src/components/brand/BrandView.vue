@@ -1,39 +1,35 @@
 <template>
   <div class="page-grid">
-    <div class="page-grid__sidebar">
+    <div class="page-grid__sidebar page-grid--scrollauto">
       <one-bar resizer="e" class="components-view__menu">
         <app-logo class="components-view__logo" />
-        <!-- component group -->
-        <one-group title="Components">
+        <!-- components group -->
+        <one-group title="Brand">
           <one-list>
-            <one-list-item :active="isActive('components-bar')">
-              <router-link :to="{ name: 'components-bar' }">Bar</router-link>
+            <one-list-item :active="isActive('brand-overview')">
+              <router-link :to="{ name: 'brand-overview' }">Overview</router-link>
             </one-list-item>
-            <one-list-item :active="isActive('components-button')">
-              <router-link :to="{ name: 'components-button' }">Button</router-link>
+            <one-list-item :active="isActive('brand-colorpalette')">
+              <router-link :to="{ name: 'brand-colorpalette' }">Color Palette</router-link>
             </one-list-item>
-            <one-list-item :active="isActive('components-group')">
-              <router-link :to="{ name: 'components-group' }">Group</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('components-nav')">
-              <router-link :to="{ name: 'components-nav' }">Nav</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('components-list')">
-              <router-link :to="{ name: 'components-list' }">List</router-link>
+            <one-list-item :active="isActive('brand-typography')">
+              <router-link :to="{ name: 'brand-typography' }">Typography</router-link>
             </one-list-item>
           </one-list>
         </one-group>
       </one-bar>
     </div>
-    <div class="page-grid__content">
-      <router-view></router-view>
+    <div class="page-grid__content page-grid--scrollauto">
+      <main class="main">
+        <router-view></router-view>
+      </main>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import AppLogo from './AppLogo.vue'
+import AppLogo from '../AppLogo.vue'
 
 export default defineComponent({
   name: 'ComponentsView',

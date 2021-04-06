@@ -1,19 +1,18 @@
 .one-button {
-  --one-button-border-width: 1pt;
-  --one-button-margin: 0;
-  --one-button-padding: .3em 1em;
   display: inline-block;
-  border: var(--one-button-border-width) solid transparent;
+  border: var(--one-border-width-small) solid transparent;
   background-color: transparent;
-  color: black;
-  padding: var(--one-button-padding);
-  margin: var(--one-button-margin);
+  padding: var(--one-space-half) var(--one-space-one);
+  margin: var(--one-space-half);
   cursor: pointer;
-  border-radius: var(--one-button-border-radius, 4pt);
+  border-radius: var(--one-border-radius-small, 2pt);
   user-select: none;
   outline: 0;
   &:focus {
     outline: 0;
+  }
+  &--rounded {
+    border-radius: var(--one-border-radius-extralarge, 6pt);
   }
   &--squared {
     border-radius: 0;
@@ -22,31 +21,27 @@
     border-radius: 999em;
   }
   /* Basic variants */
-  @each $variant in primary, secondary, success, danger, warning, info, light, dark {
+  @each $variant in primary, secondary, success, danger, warning, info {
     &--$(variant) {
       border-color:  var(--one-state-$(variant)-border-color, var(--one-state-$(variant)-color));
       background-color: var(--one-state-$(variant)-color);
       color: var(--one-state-$(variant)-font-color);
+
       &:focus {
-        box-shadow: 0 0 0 2pt var(--one-state-$(variant)-outline-color);
+        box-shadow: 0 0 0 3pt var(--one-state-$(variant)-outline-color);
       }
     }
   }
   /* Outline variants */
-  @each $variant in primary, secondary, success, danger, warning, info, light, dark {
+  @each $variant in primary, secondary, success, danger, warning, info {
     &--outline-$(variant) {
       background-color: transparent;
       color: var(--one-state-$(variant)-color);
       border-color: var(--one-state-$(variant)-color);
+
+      &:focus {
+        box-shadow: 0 0 0 3pt var(--one-state-$(variant)-outline-color);
+      }
     }
-  }
-  &--size-small {
-    font-size: .7em;
-  }
-  &--size-medium {
-    font-size: 1em;
-  }
-  &--size-large {
-    font-size: 1.3em;
   }
 }

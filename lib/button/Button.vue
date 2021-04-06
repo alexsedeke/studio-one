@@ -16,9 +16,9 @@ export default defineComponent({
       type: String,
       default: 'primary'
     },
-    size: {
+    shape: {
       type: String,
-      default: 'medium'
+      default: 'rounded'
     },
     disabled: {
       type: Boolean,
@@ -29,20 +29,13 @@ export default defineComponent({
     }
   },
   setup(props, { emit }) {
-    const { variant, size, disabled } = toRefs(props)
+    const { variant, shape, disabled } = toRefs(props)
     const onClick = () => emit('onClick')
     const cssClass = computed(() => {
       let cssClassList = ['one-button']
-      // Set variant class
-      if (variant.value.length) {
-        const variants = variant.value.split(' ').map(element => `one-button--${element.toLowerCase()}`)
-        cssClassList = cssClassList.concat(variants)
-      }
-      // Set size class
-      if (size.value.length) {
-        cssClassList.push(`one-button--size-${size.value.toLowerCase()}`)
-      }
-      return cssClassList.join(' ')
+      const keyvalues = `${variant.value} ${shape.value}`
+      const variants = keyvalues.split(' ').map(element => `one-button--${element.toLowerCase()}`)
+      return cssClassList.concat(variants).join(' ')
     })
     return {
       variant,

@@ -13,7 +13,7 @@
 <script lang="ts">
 import { ref, defineComponent, onMounted } from 'vue'
 export default defineComponent({
-  name: 'one-navitem',
+  name: 'one-nav-item',
   props: {
     disabled: {
       type: Boolean,

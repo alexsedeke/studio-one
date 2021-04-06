@@ -1,0 +1,27 @@
+:root {
+  /* coroperate color */
+  --hsl-corporate-green-h: 115;
+  --hsl-corporate-green-s: 51%;
+  --hsl-corporate-green-l: 41%;
+  --color-corporate-green: hsl(var(--hsl-corporate-green-h), var(--hsl-corporate-green-s), var(--hsl-corporate-green-l));
+  --hsl-corporate-light-green-h: 79;
+  --hsl-corporate-light-green-s: 59%;
+  --hsl-corporate-light-green-l: 45%;
+  --color-corporate-light-green: hsl(var(--hsl-corporate-light-green-h), var(--hsl-corporate-light-green-s), var(--hsl-corporate-light-green-l));
+  --hsl-corporate-orange-h: 16;
+  --hsl-corporate-orange-s: 76%;
+  --hsl-corporate-orange-l: 54%;
+  --color-corporate-orange: hsl(var(--hsl-corporate-orange-h), var(--hsl-corporate-orange-s), var(--hsl-corporate-orange-l));
+  --hsl-corporate-light-orange-h: 25;
+  --hsl-corporate-light-orange-s: 98%;
+  --hsl-corporate-light-orange-l: 58%;
+  --color-corporate-light-orange: hsl(var(--hsl-corporate-light-orange-h), var(--hsl-corporate-light-orange-s), var(--hsl-corporate-light-orange-l));
+  --hsl-corporate-violet-h: 310;
+  --hsl-corporate-violet-s: 88%;
+  --hsl-corporate-violet-l: 27%;
+  --color-corporate-violet: hsl(var(--hsl-corporate-violet-h), var(--hsl-corporate-violet-s), var(--hsl-corporate-violet-l));
+  --hsl-corporate-light-violet-h: 320;
+  --hsl-corporate-light-violet-s: 89%;
+  --hsl-corporate-light-violet-l: 40%;
+  --color-corporate-light-violet: hsl(var(--hsl-corporate-light-violet-h), var(--hsl-corporate-light-violet-s), var(--hsl-corporate-light-violet-l));
+}

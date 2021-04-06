@@ -1,0 +1,47 @@
+.block {
+  &--text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--color-cool-grey-500);
+
+    p {
+      margin: var(--one-space-three-quarter) 0;
+    }
+    strong {
+      color: var(--color-cool-grey-800);
+      font-weight: 900;
+    }
+    code {
+      display: inline-block;
+      border-radius: var(--one-border-radius-small);
+      padding: var(--one-space-eighth) var(--one-space-half);
+      color: var(--color-cool-grey-800);
+      background-color: var(--color-warm-grey-100);
+    }
+  }
+  &--introduction {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: var(--color-cool-grey-400);
+    strong {
+      color: var(--color-cool-grey-600);
+    }
+  }
+  &--heading {
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+    margin-top: 0;
+  }
+  &--subheading {
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+    margin-top: 0;
+  }
+  &--table {
+    max-width: 100%;
+    overflow: auto;
+  }
+  &--example {
+    margin: 6rem 0 0 0;
+  }
+}

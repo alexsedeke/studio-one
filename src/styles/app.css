@@ -1,17 +1,21 @@
-@import '_colors.css';
 @import '_font.css';
+
 @import '_normalize.css';
-@import '_main.css';
-@import '_variables.css';
+@import '_reset.css';
+
+@import '_main.postcss';
+@import '_article.postcss';
+@import '_block.postcss';
+@import '_heading.postcss';
+@import '_table.postcss';
+@import '_example.postcss';
+
 @import '_flex-helper.postcss';
 @import '_app.postcss';
 @import '_list.postcss';
 @import '_componentsView.postcss';
-@import '_doc.postcss';
 
 html {
-  height: 100%;
-  width: 100%;
   /*
    * 1rem = 10px      
    * 10px = 0.625rem  ( 62.5%)
@@ -24,12 +28,10 @@ html {
    * 30px = 1.875rem  (187.5%)
    * 32px = 2rem      (  200%)
    */
-  font-size: 62.5%;
+  font-size: 62.5%; /* => 1rem = 10px */
 }
 
 body {
-  height: 100%;
-  width: 100%;
   font-family: var(--one-font-body);
   font-size: 1.6rem;
 }
@@ -42,4 +44,9 @@ body {
 a {
   text-decoration-color: hsl(var(--hsl-corporate-violet-h), var(--hsl-corporate-violet-s), 85%);
   color: var(--color-corporate-light-violet);
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
 }

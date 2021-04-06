@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0;
   padding: var(--one-space-one);
+  color: var(--color-cool-grey-800);
   &--center {
     text-align: center;
   }
@@ -34,6 +35,19 @@
     }
     &:focus {
       outline: 0;
+    }
+  }
+  &--dark {
+    .one-nav {
+      &__item {
+        color: var(--color-cool-grey-100);
+        &--active {
+          background-color: var(--color-cool-grey-500);
+        }
+        &:hover:enabled:not(.one-nav__item--active) {
+          background-color: var(--color-cool-grey-500);
+        }
+      }
     }
   }
 }

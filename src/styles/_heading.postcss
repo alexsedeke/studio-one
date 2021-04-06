@@ -1,0 +1,33 @@
+.h {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+  &:hover {
+    .h__anchor__indicator {
+      opacity: 1;
+    }
+  }
+
+  &--h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+
+  &--h3 {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  &__anchor {
+    text-decoration: none;
+    color: var(--color-cool-grey-600);
+    transition: opacity var(--one-animation-duration-default);
+  
+    &__indicator {
+      opacity: 0;
+      color: var(--color-blue-400);
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+}

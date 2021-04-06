@@ -47,4 +47,26 @@
       border-color: var(--color-corporate-light-violet);
     }
   }
+
+  &__snippet {
+    border-radius: var(--one-border-radius-large);
+    &-content {
+      height: 200px;
+      overflow: auto;
+      pre {
+        margin: 0;
+        padding: 0 var(--one-space-one);
+        code {
+          min-height: 200px;
+        }
+      }
+    }
+    &--dark {
+      background: var(--color-cool-grey-800);
+      .doc__snippet-content {
+        color: var(--color-cool-grey-100);
+      }
+    }
+    
+  }
 }
