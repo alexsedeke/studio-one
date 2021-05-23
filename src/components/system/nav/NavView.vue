@@ -5,7 +5,7 @@
     </header>
     <div class="block block--text">
       <p class="block--introduction">
-        Use Studio One <strong>one-nav</strong> component for ...
+        Use Studio One <strong>sto-nav</strong> component for ...
       </p>
     </div>
     <!-- EXAMPLES -->
@@ -19,21 +19,21 @@
     </div>
     <div class="example">
       <div class="example__presentation">
-        <one-nav class="one-nav--center">
-          <one-nav-item @onClick="activateItem('test1')" :active="isActive('test1')">Test 1</one-nav-item>
-          <one-nav-item @onClick="activateItem('test2')" :active="isActive('test2')">Test 2</one-nav-item>
-          <one-nav-item @onClick="activateItem('test3')" :active="isActive('test3')">Test 3</one-nav-item>
-        </one-nav>
+        <sto-nav class="sto-nav--center">
+          <sto-nav-item @onClick="activateItem('test1')" :active="isActive('test1')">Test 1</sto-nav-item>
+          <sto-nav-item @onClick="activateItem('test2')" :active="isActive('test2')">Test 2</sto-nav-item>
+          <sto-nav-item @onClick="activateItem('test3')" :active="isActive('test3')">Test 3</sto-nav-item>
+        </sto-nav>
       </div>
       <div class="example__snippet">
         <div class="example__snippet__title">Source</div>
         <pre><code
           class="html"
-          contenteditable="true">&lt;one-nav class="one-nav--center"&gt;
-  &lt;one-nav-item @onClick="activateItem('test1')" :active="isActive('test1')"&gt;Test 1&lt;/one-nav-item&gt;
-  &lt;one-nav-item @onClick="activateItem('test2')" :active="isActive('test2')"&gt;Test 2&lt;/one-nav-item&gt;
-  &lt;one-nav-item @onClick="activateItem('test3')" :active="isActive('test3')"&gt;Test 3&lt;/one-nav-item&gt;
-&lt;/one-nav&gt;</code></pre>
+          contenteditable="true">&lt;sto-nav class="sto-nav--center"&gt;
+  &lt;sto-nav-item @onClick="activateItem('test1')" :active="isActive('test1')"&gt;Test 1&lt;/sto-nav-item&gt;
+  &lt;sto-nav-item @onClick="activateItem('test2')" :active="isActive('test2')"&gt;Test 2&lt;/sto-nav-item&gt;
+  &lt;sto-nav-item @onClick="activateItem('test3')" :active="isActive('test3')"&gt;Test 3&lt;/sto-nav-item&gt;
+&lt;/sto-nav&gt;</code></pre>
       </div>
     </div>
     <!-- EXAMPLES::test -->
@@ -51,7 +51,7 @@
     <!-- API::properties -->
     <Headline anchor="properties" :level="3">Properties</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Property</th>
@@ -73,7 +73,7 @@
     <!-- API::events -->
     <Headline anchor="events" :level="3">Events</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Event</th>
@@ -93,7 +93,7 @@
     <!-- API::slots -->
     <Headline anchor="slots" :level="3">Slots</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Name</th>

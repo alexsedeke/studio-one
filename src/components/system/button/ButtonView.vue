@@ -5,7 +5,7 @@
     </header>
     <div class="block block--text">
       <p class="block--introduction">
-        Use Studio One custom <strong>one-button</strong> component for actions in forms, dialogs, and more.<br>
+        Use Studio One custom <strong>sto-button</strong> component for actions in forms, dialogs, and more.<br>
         Includes support for a handful of contextual variations, sizes, shapes, and more.
       </p>
     </div>
@@ -19,7 +19,7 @@
         <strong>primary</strong>, <strong>secodary</strong>, <strong>success</strong>, <strong>warning</strong>, <strong>danger</strong> and <strong>info</strong>, as well as all these variants as outline, 
         <strong>outline-primary</strong>, <strong>outline-secodary</strong>, <strong>outline-success</strong>, <strong>outline-warning</strong>, <strong>outline-danger</strong> and <strong>outline-info</strong>.<br>
         Variant are a substitute for predefined CSS classes. If a non-predefined variant is entered, nothing happens because the css class predefined for it was not found.
-        Variants can be expanded from. A CSS class must be created for this, which follows the following pattern: <strong>'one-button--&lt;variant&gt;'</strong>. 
+        Variants can be expanded from. A CSS class must be created for this, which follows the following pattern: <strong>'sto-button--&lt;variant&gt;'</strong>. 
       </p>
     </div>
     <div class="block block--example"> 
@@ -33,7 +33,7 @@
         The shape appearance of the component can be defined using the shape property. As with the variant property, the shape property also has predefined values. 
         These are <strong>pill</strong>, <strong>squared</strong> and <strong>rounded</strong>, whereby <strong>rounded</strong> is the default.<br>
         As Variants, shapes are a substitute for predefined CSS classes. If a non-predefined variant is entered, the button gets slightly soft corners. These are predefined in the basic class. 
-        Also shapes can be expanded from. A CSS class must be created for this, which follows the following pattern: <strong>'one-button--&lt;shape&gt;'</strong>. 
+        Also shapes can be expanded from. A CSS class must be created for this, which follows the following pattern: <strong>'sto-button--&lt;shape&gt;'</strong>. 
       </p>
     </div>
 
@@ -45,7 +45,7 @@
     <!-- API::properties -->
     <Headline anchor="properties" :level="3">Properties</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Property</th>
@@ -73,7 +73,7 @@
     <!-- API::events -->
     <Headline anchor="events" :level="3">Events</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Event</th>
@@ -93,7 +93,7 @@
     <!-- API::slots -->
     <Headline anchor="slots" :level="3">Slots</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Name</th>

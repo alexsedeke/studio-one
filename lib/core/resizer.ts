@@ -10,20 +10,20 @@ export const resizeHandler = (target: HTMLElement, resizerType: ResizerKeyType) 
   const initResize = (event: MouseEvent) => {
     if (event.button === 0) {
       window.getSelection()?.removeAllRanges()
-      document.body.classList.add(`one-resize__global--${resizerType}`)
+      document.body.classList.add(`sto-resize__global--${resizerType}`)
       window.addEventListener('mousemove', Resize, false)
       window.addEventListener('mouseup', stopResize, false)
     }
   }
   
   const stopResize = () => {
-    document.body.classList.remove(`one-resize__global--${resizerType}`)
+    document.body.classList.remove(`sto-resize__global--${resizerType}`)
     window.removeEventListener('mousemove', Resize, false)
     window.removeEventListener('mouseup', stopResize, false)
   }
   
   const resizer: HTMLElement = document.createElement('div')
-  resizer.classList.add('one-resize', `one-resize--${resizerType}`)
+  resizer.classList.add('sto-resize', `sto-resize--${resizerType}`)
   target.appendChild(resizer)
   resizer.addEventListener('mousedown', initResize, false)
 

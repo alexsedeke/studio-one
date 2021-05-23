@@ -29,27 +29,27 @@
   --hsl-state-disabled-l: 23%;
   --color-state-disabled: hsl(var(--hsl-state-disabled-h), var(--hsl-state-disabled-s), var(--hsl-state-disabled-l));
   /* STATE -> PRIMARY */
-  --one-state-primary-color: var(--color-state-primary);
-  --one-state-primary-font-color: var(--color-white);
-  --one-state-primary-outline-color: hsl(var(--hsl-state-primary-h), var(--hsl-state-primary-s), 80%);
+  --sto-state-primary-color: var(--color-state-primary);
+  --sto-state-primary-font-color: var(--color-white);
+  --sto-state-primary-outline-color: hsl(var(--hsl-state-primary-h), var(--hsl-state-primary-s), 80%);
   /* STATE -> SECONDARY */
-  --one-state-secondary-color: var(--color-state-secondary);
-  --one-state-secondary-font-color: var(--color-white);
-  --one-state-secondary-outline-color: hsl(var(--hsl-state-secondary-h), var(--hsl-state-secondary-s), 80%);
+  --sto-state-secondary-color: var(--color-state-secondary);
+  --sto-state-secondary-font-color: var(--color-white);
+  --sto-state-secondary-outline-color: hsl(var(--hsl-state-secondary-h), var(--hsl-state-secondary-s), 80%);
   /* STATE -> SUCCESS */
-  --one-state-success-color: var(--color-state-success);
-  --one-state-success-font-color: var(--color-white);
-  --one-state-success-outline-color: hsl(var(--hsl-state-success-h), var(--hsl-state-success-s), 80%);
+  --sto-state-success-color: var(--color-state-success);
+  --sto-state-success-font-color: var(--color-white);
+  --sto-state-success-outline-color: hsl(var(--hsl-state-success-h), var(--hsl-state-success-s), 80%);
   /* STATE -> DANGER */
-  --one-state-danger-color: var(--color-state-danger);
-  --one-state-danger-font-color: var(--color-white);
-  --one-state-danger-outline-color: hsl(var(--hsl-state-danger-h), var(--hsl-state-danger-s), 80%);
+  --sto-state-danger-color: var(--color-state-danger);
+  --sto-state-danger-font-color: var(--color-white);
+  --sto-state-danger-outline-color: hsl(var(--hsl-state-danger-h), var(--hsl-state-danger-s), 80%);
   /* STATE -> WARNING */
-  --one-state-warning-color: var(--color-state-warning);
-  --one-state-warning-font-color: var(--color-black);
-  --one-state-warning-outline-color: hsl(var(--hsl-state-warning-h), var(--hsl-state-warning-s), 80%);
+  --sto-state-warning-color: var(--color-state-warning);
+  --sto-state-warning-font-color: var(--color-black);
+  --sto-state-warning-outline-color: hsl(var(--hsl-state-warning-h), var(--hsl-state-warning-s), 80%);
   /* STATE -> INFO */
-  --one-state-info-color: var(--color-state-info);
-  --one-state-info-font-color: var(--color-white);
-  --one-state-info-outline-color: hsl(var(--hsl-state-info-h), var(--hsl-state-info-s), 80%);
+  --sto-state-info-color: var(--color-state-info);
+  --sto-state-info-font-color: var(--color-white);
+  --sto-state-info-outline-color: hsl(var(--hsl-state-info-h), var(--hsl-state-info-s), 80%);
 }

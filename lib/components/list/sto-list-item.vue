@@ -1,5 +1,5 @@
 <template>
-  <li class="one-listitem" :class="cssClasses">
+  <li class="sto-listitem" :class="cssClasses">
     <slot name="pre"></slot>
     <slot></slot>
     <slot name="post"></slot>
@@ -8,10 +8,10 @@
 
 <script lang="ts">
 import { ref, watch, defineComponent } from 'vue'
-import Classlist from '../features/classlist'
+import Classlist from '../../core/classlist'
 
 export default defineComponent({
-  name: 'one-list-item',
+  name: 'sto-list-item',
   props: {
     active: {
       type: Boolean
@@ -23,9 +23,9 @@ export default defineComponent({
 
     watch(() => props.active, (currentValue) => {
       if (currentValue === true) {
-        classlist.addClass('one-listitem--active')
+        classlist.addClass('sto-listitem--active')
       } else {
-        classlist.removeClass('one-listitem--active')
+        classlist.removeClass('sto-listitem--active')
       }
       cssClasses.value = classlist.join(' ')
     })

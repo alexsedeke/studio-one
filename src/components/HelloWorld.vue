@@ -1,5 +1,5 @@
 <template>
-  <one-bar resizer="e">some text here</one-bar>
+  <sto-bar resizer="e">some text here</sto-bar>
   <h1>{{ msg }}</h1>
 
   <p>
@@ -15,11 +15,11 @@
     (if using
     <code>&ltscript setup&gt;</code>)
   </p>
-  <one-bar resizer="n">and some content here</one-bar>
+  <sto-bar resizer="n">and some content here</sto-bar>
   <p>See <code>README.md</code> for more information.</p>
 
   <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Docs</a> |
+    <a href="https://vitejs.dev/guide/core.html" target="_blank">Vite Docs</a> |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 

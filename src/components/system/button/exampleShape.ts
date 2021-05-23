@@ -1,6 +1,6 @@
-export default `<one-button variant="primary" shape="pill">Primary</one-button>
-<one-button variant="secondary" shape="pill">Secondary</one-button>
-<one-button variant="success" shape="squared">Success</one-button>
-<one-button variant="warning" shape="squared">Warning</one-button>
-<one-button variant="danger" shape="rounded">Danger</one-button>
-<one-button variant="info" shape="rounded">Info</one-button>`
+export default `<sto-button variant="primary" shape="pill">Primary</sto-button>
+<sto-button variant="secondary" shape="pill">Secondary</sto-button>
+<sto-button variant="success" shape="squared">Success</sto-button>
+<sto-button variant="warning" shape="squared">Warning</sto-button>
+<sto-button variant="danger" shape="rounded">Danger</sto-button>
+<sto-button variant="info" shape="rounded">Info</sto-button>`

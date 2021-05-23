@@ -2,8 +2,8 @@
   <button
     ref="navElement"
     type="button"
-    class="one-nav__item"
-    :class="{ 'one-nav__item--active': active }"
+    class="sto-nav__item"
+    :class="{ 'sto-nav__item--active': active }"
     :disabled="disabled"
     @click.stop="onClick">
     <slot></slot>
@@ -11,9 +11,9 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent, onMounted } from 'vue'
+import { ref, defineComponent } from 'vue'
 export default defineComponent({
-  name: 'one-nav-item',
+  name: 'sto-nav-item',
   props: {
     disabled: {
       type: Boolean,
@@ -24,7 +24,7 @@ export default defineComponent({
       default: false
     }
   },
-  setup(props, { emit }) {
+  setup(_, { emit }) {
     const navElement = ref<HTMLElement | null>(null)
     const onClick = () => emit('onClick')
 

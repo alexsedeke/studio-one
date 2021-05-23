@@ -1,17 +1,17 @@
 export default `<div>
-  <one-button variant="primary">Primary</one-button>
-  <one-button variant="secondary">Secondary</one-button>
-  <one-button variant="success">Success</one-button>
-  <one-button variant="warning">Warning</one-button>
-  <one-button variant="danger">Danger</one-button>
-  <one-button variant="info">Info</one-button>
-  <one-button variant="disabled">Disabled</one-button>
+  <sto-button variant="primary">Primary</sto-button>
+  <sto-button variant="secondary">Secondary</sto-button>
+  <sto-button variant="success">Success</sto-button>
+  <sto-button variant="warning">Warning</sto-button>
+  <sto-button variant="danger">Danger</sto-button>
+  <sto-button variant="info">Info</sto-button>
+  <sto-button variant="disabled">Disabled</sto-button>
 </div>
 <div>
-  <one-button variant="outline-primary">Primary</one-button>
-  <one-button variant="outline-secondary">Secondary</one-button>
-  <one-button variant="outline-success">Success</one-button>
-  <one-button variant="outline-warning">Warning</one-button>
-  <one-button variant="outline-danger">Danger</one-button>
-  <one-button variant="outline-info">Info</one-button>
+  <sto-button variant="outline-primary">Primary</sto-button>
+  <sto-button variant="outline-secondary">Secondary</sto-button>
+  <sto-button variant="outline-success">Success</sto-button>
+  <sto-button variant="outline-warning">Warning</sto-button>
+  <sto-button variant="outline-danger">Danger</sto-button>
+  <sto-button variant="outline-info">Info</sto-button>
 </div>`

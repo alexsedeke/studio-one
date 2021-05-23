@@ -1,40 +1,40 @@
 <template>
   <div class="page-grid">
     <div class="page-grid__sidebar page-grid--scrollauto">
-      <one-bar resizer="e" class="components-view__menu">
+      <sto-bar resizer="e" class="components-view__menu">
         <app-logo class="components-view__logo" />
         <!-- components group -->
-        <one-group title="Components">
-          <one-list>
-            <one-list-item :active="isActive('components-overview')">
+        <sto-group title="Components">
+          <sto-list>
+            <sto-list-item :active="isActive('components-overview')">
               <router-link :to="{ name: 'components-overview' }">Overview</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('components-bar')">
+            </sto-list-item>
+            <sto-list-item :active="isActive('components-bar')">
               <router-link :to="{ name: 'components-bar' }">Bar</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('components-button')">
+            </sto-list-item>
+            <sto-list-item :active="isActive('components-button')">
               <router-link :to="{ name: 'components-button' }">Button</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('components-group')">
+            </sto-list-item>
+            <sto-list-item :active="isActive('components-group')">
               <router-link :to="{ name: 'components-group' }">Group</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('components-nav')">
+            </sto-list-item>
+            <sto-list-item :active="isActive('components-nav')">
               <router-link :to="{ name: 'components-nav' }">Nav</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('components-list')">
+            </sto-list-item>
+            <sto-list-item :active="isActive('components-list')">
               <router-link :to="{ name: 'components-list' }">List</router-link>
-            </one-list-item>
-          </one-list>
-        </one-group>
+            </sto-list-item>
+          </sto-list>
+        </sto-group>
         <!-- CSS group -->
-        <one-group title="CSS">
-          <one-list>
-            <one-list-item :active="isActive('css-overview')">
+        <sto-group title="CSS">
+          <sto-list>
+            <sto-list-item :active="isActive('css-overview')">
               <router-link :to="{ name: 'css-overview' }">Overview</router-link>
-            </one-list-item>
-          </one-list>
-        </one-group>
-      </one-bar>
+            </sto-list-item>
+          </sto-list>
+        </sto-group>
+      </sto-bar>
     </div>
     <div class="page-grid__content page-grid--scrollauto">
       <main class="main">

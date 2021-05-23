@@ -1,17 +1,17 @@
 <template>
-  <div ref="barElement" class="one-bar" :class="getResizerStyle">
-    <div class="one-bar__content">
+  <div ref="barElement" class="sto-bar" :class="getResizerStyle">
+    <div class="sto-bar__content">
       <slot></slot>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { ref, computed, defineComponent, onMounted, PropType } from 'vue'
-import { ResizerKeyType } from '../types'
-import { resizeHandler } from '../features/resizer'
+import { ResizerKeyType } from '../../types/index'
+import { resizeHandler } from '../../core/resizer'
 
 export default defineComponent({
-  name: 'one-bar',
+  name: 'sto-bar',
   props: {
     resizer: {
       type: String as PropType<ResizerKeyType>,
@@ -23,7 +23,7 @@ export default defineComponent({
 
     const getResizerStyle = computed(() => {
       if (props.resizer) {
-        return `one-resize--${props.resizer}-parent`
+        return `sto-resize--${props.resizer}-parent`
       }
       return ''
     })

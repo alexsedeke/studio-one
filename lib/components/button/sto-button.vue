@@ -10,7 +10,7 @@
 <script lang="ts">
 import  { toRefs, computed, defineComponent } from 'vue'
 export default defineComponent({
-  name: 'one-button',
+  name: 'sto-button',
   props: {
     variant: {
       type: String,
@@ -32,9 +32,9 @@ export default defineComponent({
     const { variant, shape, disabled } = toRefs(props)
     const onClick = () => emit('onClick')
     const cssClass = computed(() => {
-      let cssClassList = ['one-button']
+      let cssClassList = ['sto-button']
       const keyvalues = `${variant.value} ${shape.value}`
-      const variants = keyvalues.split(' ').map(element => `one-button--${element.toLowerCase()}`)
+      const variants = keyvalues.split(' ').map(element => `sto-button--${element.toLowerCase()}`)
       return cssClassList.concat(variants).join(' ')
     })
     return {

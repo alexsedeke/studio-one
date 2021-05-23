@@ -5,7 +5,7 @@
     </header>
     <div class="block block--text">
       <p class="block--introduction">
-        Use Studio One <strong>one-group</strong> component for ...
+        Use Studio One <strong>sto-group</strong> component for ...
       </p>
     </div>
     <!-- EXAMPLES -->
@@ -25,7 +25,7 @@
     <!-- API::properties -->
     <Headline anchor="properties" :level="3">Properties</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Property</th>
@@ -47,7 +47,7 @@
     <!-- API::events -->
     <Headline anchor="events" :level="3">Events</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Event</th>
@@ -67,7 +67,7 @@
     <!-- API::slots -->
     <Headline anchor="slots" :level="3">Slots</Headline>
     <div class="block block--table">
-      <table class="one-table">
+      <table class="sto-table">
         <thead>
           <tr>
             <th>Name</th>

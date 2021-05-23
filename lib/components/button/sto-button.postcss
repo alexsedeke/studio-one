@@ -1,0 +1,47 @@
+.sto-button {
+  display: inline-block;
+  border: var(--sto-border-width-small) solid transparent;
+  background-color: transparent;
+  padding: var(--sto-space-half) var(--sto-space-one);
+  margin: var(--sto-space-half);
+  cursor: pointer;
+  border-radius: var(--sto-border-radius-small, 2pt);
+  user-select: none;
+  outline: 0;
+  &:focus {
+    outline: 0;
+  }
+  &--rounded {
+    border-radius: var(--sto-border-radius-extralarge, 6pt);
+  }
+  &--squared {
+    border-radius: 0;
+  }
+  &--pill {
+    border-radius: 999em;
+  }
+  /* Basic variants */
+  @each $variant in primary, secondary, success, danger, warning, info {
+    &--$(variant) {
+      border-color:  var(--sto-state-$(variant)-border-color, var(--sto-state-$(variant)-color));
+      background-color: var(--sto-state-$(variant)-color);
+      color: var(--sto-state-$(variant)-font-color);
+
+      &:focus {
+        box-shadow: 0 0 0 3pt var(--sto-state-$(variant)-outline-color);
+      }
+    }
+  }
+  /* Outline variants */
+  @each $variant in primary, secondary, success, danger, warning, info {
+    &--outline-$(variant) {
+      background-color: transparent;
+      color: var(--sto-state-$(variant)-color);
+      border-color: var(--sto-state-$(variant)-color);
+
+      &:focus {
+        box-shadow: 0 0 0 3pt var(--sto-state-$(variant)-outline-color);
+      }
+    }
+  }
+}

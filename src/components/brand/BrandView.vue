@@ -1,23 +1,23 @@
 <template>
   <div class="page-grid">
     <div class="page-grid__sidebar page-grid--scrollauto">
-      <one-bar resizer="e" class="components-view__menu">
+      <sto-bar resizer="e" class="components-view__menu">
         <app-logo class="components-view__logo" />
         <!-- components group -->
-        <one-group title="Brand">
-          <one-list>
-            <one-list-item :active="isActive('brand-overview')">
+        <sto-group title="Brand">
+          <sto-list>
+            <sto-list-item :active="isActive('brand-overview')">
               <router-link :to="{ name: 'brand-overview' }">Overview</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('brand-colorpalette')">
+            </sto-list-item>
+            <sto-list-item :active="isActive('brand-colorpalette')">
               <router-link :to="{ name: 'brand-colorpalette' }">Color Palette</router-link>
-            </one-list-item>
-            <one-list-item :active="isActive('brand-typography')">
+            </sto-list-item>
+            <sto-list-item :active="isActive('brand-typography')">
               <router-link :to="{ name: 'brand-typography' }">Typography</router-link>
-            </one-list-item>
-          </one-list>
-        </one-group>
-      </one-bar>
+            </sto-list-item>
+          </sto-list>
+        </sto-group>
+      </sto-bar>
     </div>
     <div class="page-grid__content page-grid--scrollauto">
       <main class="main">

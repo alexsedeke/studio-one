@@ -210,7 +210,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { hsl } from 'color-convert'
-import { copyToClipboard } from '../../../lib/features/clipboard'
+import { copyToClipboard } from '../../../lib/core/clipboard'
 export default defineComponent({
   name: 'ColorpaletteView',
   setup() {

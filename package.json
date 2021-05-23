@@ -3,17 +3,19 @@
   "version": "1.0.0-alpha.1",
   "description": "Studio One Vue 3 UI Components",
   "main": "dist/studio-one.umd.js",
-  "module": "dist/studio-one.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/studio-one.es.js",
-      "require": "./dist/studio-one.umd.js"
-    }
-  },
-  "unpkg": "dist/studio-one.umd.min.js",
+  "browser": "dist/studio-one.esm.js",
+  "module": "dist/studio-one.esm.js",
+  "unpkg": "dist/studio-one.cjs.js",
+  "types": "studio-one.d.ts",
+  "style": "dist/style.css",
+  "files": [
+    "dist/*",
+    "studio-one.d.ts",
+    "lib/**/*.vue"
+  ],
   "scripts": {
     "dev": "vite --config vite-app.config.ts",
-    "build": "vite build --config vite-app.config.ts",
+    "build:storybook": "vite build --config vite-app.config.ts",
     "build:lib": "vite build --config vite-lib.config.ts",
     "serve": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -51,11 +53,6 @@
   "workspaces": [
     "./packages/*"
   ],
-  "files": [
-    "dist/",
-    "lib/types/"
-  ],
-  "types": "./lib/types/index.d.ts",
   "dependencies": {
     "@types/color-convert": "^2.0.0",
     "color-convert": "^2.0.1",
@@ -63,21 +60,21 @@
     "highlightjs-line-numbers.js": "^2.8.0",
     "lodash": "^4.17.21",
     "vue": "^3.0.11",
-    "vue-router": "^4.0.5"
+    "vue-router": "^4.0.6"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",
-    "@types/node": "^14.14.34",
-    "@vitejs/plugin-vue": "^1.1.4",
+    "@types/node": "^15.0.0",
+    "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
     "autoprefixer": "^10.2.4",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.1",
     "postcss-atroot": "^0.1.3",
     "postcss-each": "^1.0.0",
     "postcss-extend-rule": "^3.0.0",
     "postcss-nested": "^5.0.3",
-    "postcss-property-lookup": "^2.0.0",
-    "typescript": "^4.1.3",
-    "vite": "^2.1.5"
+    "postcss-property-lookup": "^3.0.0",
+    "typescript": "^4.2.4",
+    "vite": "^2.2.3"
   }
 }

@@ -8,10 +8,11 @@ export default defineConfig({
   publicDir: '/lib/types',
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/main.ts'),
-      name: 'studio-one'
+      entry: path.resolve(__dirname, 'lib/entry.esm.ts'),
+      name: 'studioOne',
+      formats: ['es', 'cjs', 'umd', 'iife']
     },
-    outDir: 'dist-lib',
+    outDir: 'dist',
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library

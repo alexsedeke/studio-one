@@ -1,17 +1,17 @@
 .example {
-  --one-color-snippet: hsl(var(--hsl-cool-grey-100-h), var(--hsl-cool-grey-100-s), 97.3%);
-  border-radius: var(--one-border-radius-extralarge);
+  --sto-color-snippet: hsl(var(--hsl-cool-grey-100-h), var(--hsl-cool-grey-100-s), 97.3%);
+  border-radius: var(--sto-border-radius-extralarge);
   min-height: 100pt;
-  margin: var(--one-space-one) 0;
+  margin: var(--sto-space-one) 0;
 
   &__presentation {
-    margin: var(--one-space-one) 0;
+    margin: var(--sto-space-one) 0;
   }
 
   &__snippet {
-    margin: var(--one-space-one) 0;
-    border-radius: var(--one-border-radius-large);
-    border: 6pt solid var(--one-color-snippet);
+    margin: var(--sto-space-one) 0;
+    border-radius: var(--sto-border-radius-large);
+    border: 6pt solid var(--sto-color-snippet);
     min-height: 150pt;
     overflow: auto;
     &__title {
@@ -19,15 +19,15 @@
       font-size: .8em;
       font-weight: 500;
       color: var(--color-cool-grey-300);
-      background-color: var(--one-color-snippet);
+      background-color: var(--sto-color-snippet);
     }
     pre {
       margin: 0;
       padding: 0;
-      background-color: var(--one-color-snippet);
+      background-color: var(--sto-color-snippet);
       outline: none;
       code {
-        background-color: var(--one-color-snippet);
+        background-color: var(--sto-color-snippet);
         min-height: 150pt;
         outline: none;
       }

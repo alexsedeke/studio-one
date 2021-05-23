@@ -9,8 +9,7 @@ export default defineConfig({
     }
   },
   plugins: [vue()],
-  base: '/studio-one/',
   build: {
-    outDir: 'dist'
+    outDir: 'dist-app'
   }
 })

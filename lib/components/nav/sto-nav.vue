@@ -1,5 +1,5 @@
 <template>
-  <nav class="one-nav">
+  <nav class="sto-nav">
     <slot></slot>
   </nav>
 </template>
@@ -7,6 +7,6 @@
 <script lang="ts">
 import  { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'one-nav',
+  name: 'sto-nav',
 })
 </script>
