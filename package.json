@@ -1,6 +1,6 @@
 {
   "name": "studio-one",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Studio One Vue 3 UI Components",
   "main": "dist/studio-one.umd.js",
   "browser": "dist/studio-one.esm.js",
@@ -8,6 +8,12 @@
   "unpkg": "dist/studio-one.cjs.js",
   "types": "studio-one.d.ts",
   "style": "dist/style.css",
+  "exports": {
+    ".": {
+      "import": "./dist/studio-one.es.js",
+      "require": "./dist/studio-one.umd.js"
+    }
+  },
   "files": [
     "dist/*",
     "studio-one.d.ts",
